@@ -1,4 +1,26 @@
-# Garf-master
+# Self-supervised and Interpretable Data Cleaning with Sequence Generative Adversarial Networks
+
+[Papers](https://www.vldb.org/pvldb/vol16/p433-peng.pdf)
+
+# Quick-start
+
+```SHELL
+conda create -n Garf_37 python=3.7
+```
+
+```SHELL
+pip install -r requirements.txt
+```
+
+# Dataset description
+
+XXX_rules 为干净数据
+XXX_rules_copy 为脏数据
+XXX_rules_copy1 为程序中使用的数据
+XXX_rules_copy2 为程序中使用的数据
+
+
+# Other Information
 
 实验需要在数据库中存在4个数据集，以Hosp_rules为例(config.ini中path_pos = Hosp_rules_copy，若变更数据集则变更此处)  
 Hosp_rules是初始干净数据集  
@@ -19,7 +41,6 @@ insert_error.py用于添加错误，错误包含3类：拼写错误，数据缺�
 预期结果：  
 测试数据集数据量为10k条，Hosp数据集结果为准确率98%±1%，召回率65%±3%；Food数据集结果为准确率97%±2%，召回率62%±5%  
 随着数据量提升，模型性能提升，论文中Hosp数据量为100k，Food数据量为200k  
-更多的实验结果与模型介绍请见：https://www.vldb.org/pvldb/vol16/p433-peng.pdf
 
 若需补充数据，请点击下方链接：  
 
