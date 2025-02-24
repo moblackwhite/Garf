@@ -567,7 +567,7 @@ class Generator():
         l1=len(rules_final)
         # print(rules_final)
         num = 0
-        conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/orcl')  # 连接数据库
+        conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/XE')  # 连接数据库
         cursor = conn.cursor()
         for rulename, ruleinfo in list(rules_final.items()):
             num += 1
@@ -820,7 +820,7 @@ class Generator():
         num = 0
         error_rule=0
         error_data=0
-        conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/orcl')  # 连接数据库
+        conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/XE')  # 连接数据库
         cursor = conn.cursor()
         for rulename, ruleinfo in list(self.rule.items()):
             num += 1

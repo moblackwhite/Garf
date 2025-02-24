@@ -6,7 +6,7 @@ def evaluate(path_ori,path):
     # path_ori = "LETTER"
     # path = "LETTER_copy"\
     print("进行评估")
-    conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/orcl')  # 连接数据库
+    conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/XE')  # 连接数据库
     cursor = conn.cursor()
 
     sql1 = "select * from \"" + path + "\" where \"Label\"='2' or \"Label\"='3'"    #where rownum < 3  #order by "Provider ID" desc

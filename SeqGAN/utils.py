@@ -33,7 +33,7 @@ class Vocab:    #建立词汇库
 
 def load_data(path, order):
 
-    conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/orcl')  # 连接数据库
+    conn = cx_Oracle.connect('system', 'Pjfpjf11', '127.0.0.1:1521/XE')  # 连接数据库
     cursor = conn.cursor()
     sql1 = "select * from \"" + path + "\" "
     print(sql1)
